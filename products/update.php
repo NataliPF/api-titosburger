@@ -14,8 +14,8 @@ if($_SERVER["REQUEST_METHOD"] == "PUT"){
 
     $controllerProducts = new controllerProducts();
     $update = $controllerProducts->update($id, $data);
-    
-    if ($update) {
+
+    if($update) {
         $msg = array("msg" => "Product has been updated successfully.");
         echo json_encode($msg);
     } else {
@@ -26,5 +26,3 @@ if($_SERVER["REQUEST_METHOD"] == "PUT"){
 } else {
     header("HTTP/1.1 405 Method Not Allowed");
 }
-
-?>
