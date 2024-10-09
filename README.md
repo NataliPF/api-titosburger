@@ -1,2 +1,2 @@
 # api-titosburger
-API desenvolvida para aplicação de mobile Fast Food 
+API mobile desenvolvida para rede fast-food
